@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "blood-effects",
+	"version": "${version}",
+	"name": "Blood Effects",
+	"description": "`Everyone 10+` ESRB rating goes bye bye!",
+	"authors": [
+		"Trench Rat"
+	],
+	"contact": {
+		"homepage": "-",
+		"sources": "-"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/blood-effects/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"dev.trench.blood.BloodEffectsClient"
+		]
+	},
+	"mixins": [
+		"blood-effects.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	},
+	"custom": {
+		"modmenu:clientsideOnly": true,
+		"modmenu:api": false
+	}
+}
